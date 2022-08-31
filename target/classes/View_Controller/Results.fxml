@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="521.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Results">
+   <children>
+      <TableView fx:id="table_id" layoutX="50.0" layoutY="81.0" prefHeight="375.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="title_col" prefWidth="89.0" text="Title" />
+          <TableColumn fx:id="date_col" prefWidth="50.0" text="Year" />
+            <TableColumn fx:id="description_col" prefWidth="426.0" text="Description" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="50.0" text="Based on your selections, your recommendations are:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="home_btn" layoutX="206.0" layoutY="469.0" mnemonicParsing="false" text="Home"
+        onAction="#home"/>
+   </children>
+</AnchorPane>

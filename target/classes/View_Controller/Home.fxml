@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Home">
+   <children>
+      <Button fx:id="exit_btn" layoutX="497.0" layoutY="456.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" text="Exit"
+         onAction="#exit"/>
+      <Button fx:id="dashboard_btn" layoutX="398.0" layoutY="457.0" mnemonicParsing="false" text="Dashboard"
+         onAction="#dashboard"/>
+      <Button fx:id="go_btn" layoutX="273.0" layoutY="332.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="63.0" text="Go"
+         onAction="#go"/>
+      <ComboBox fx:id="tv_movie_opt" layoutX="287.0" layoutY="156.0" prefWidth="150.0"
+         onAction="#onmovieoption"/>
+      <Label layoutX="202.0" layoutY="161.0" text="Select Type: " />
+      <Label layoutX="177.0" layoutY="62.0" prefHeight="23.0" prefWidth="255.0" text="Netflix Recommendation Program">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="release_decade_opt" layoutX="287.0" layoutY="204.0" prefWidth="150.0" />
+      <Label layoutX="144.0" layoutY="209.0" text="Select Release Decade:" />
+      <ComboBox fx:id="genre_opt" layoutX="287.0" layoutY="251.0" prefWidth="150.0" />
+      <Label layoutX="196.0" layoutY="256.0" text="Select Genre:" />
+   </children>
+</AnchorPane>

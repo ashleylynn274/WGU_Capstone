@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Netflix Recommendation Program">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Label>
+   <ComboBox prefWidth="150.0" promptText="Movie or TV show?" />
+
+   <!--<TableView fx:id="videoTable" prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn fx:id="idCol" prefWidth="75.0" text="C1" />
+       <TableColumn fx:id="titleCol" prefWidth="75.0" text="C2" />
+     </columns>
+   </TableView>
+-->
+    <Label fx:id="welcomeText" />
+    <Button onAction="#onHelloButtonClick" text="Go" />
+</VBox>
